@@ -9,6 +9,8 @@ import 'package:food_delivery_app/view/Authentication/welcome_screen.dart';
 import 'package:food_delivery_app/view/Dashboard&Categories/dashboard.dart';
 import 'package:food_delivery_app/view/Dashboard&Categories/discovery_categories.dart';
 import 'package:food_delivery_app/view/Dashboard&Categories/profile.dart';
+import 'package:food_delivery_app/view/Drinks/drinks.dart';
+import 'package:food_delivery_app/view/Groceries/alcampo.dart';
 import 'package:food_delivery_app/view/Groceries/groceries_stores.dart';
 import 'package:food_delivery_app/view/MoodBoard/signin_screen.dart';
 import 'package:food_delivery_app/view/MoodBoard/splashscreen.dart';
@@ -17,6 +19,7 @@ import 'package:food_delivery_app/view/Premium_Restaurants/mcdonalds_screen.dart
 import 'package:food_delivery_app/view/Premium_Restaurants/pizzahut_screen.dart';
 import 'package:food_delivery_app/view/Premium_Restaurants/premium_restaurants.dart';
 import 'package:food_delivery_app/view/Premium_Restaurants/subway_screen.dart';
+import 'package:food_delivery_app/view/Restaurants/restaurants.dart';
 
 class Routes {
   static MaterialPageRoute generateRoute(RouteSettings settings) {
@@ -55,6 +58,12 @@ class Routes {
         return MaterialPageRoute(builder: (_) => const GroceryStores());
       case RoutesName.premiumRestaurants:
         return MaterialPageRoute(builder: (_) => const PremiumRestaurants());
+      case RoutesName.alcampo:
+        return MaterialPageRoute(builder: (_) => const Alcampo());
+      case RoutesName.drinks:
+        return MaterialPageRoute(builder: (_) => const Drinks());
+      case RoutesName.restaurants:
+        return MaterialPageRoute(builder: (_) => const Restaurants());
       default:
         return MaterialPageRoute(builder: (_) {
           return Scaffold(

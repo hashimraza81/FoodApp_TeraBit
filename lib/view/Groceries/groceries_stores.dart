@@ -6,6 +6,7 @@ import 'package:food_delivery_app/const/app_color.dart';
 import 'package:food_delivery_app/const/app_images.dart';
 import 'package:food_delivery_app/extension/sizebox_extension.dart';
 import 'package:food_delivery_app/routes/routes_names.dart';
+import 'package:food_delivery_app/utils/gridview_reused.dart';
 
 class GroceryStores extends StatelessWidget {
   final Color secondaryColor = AppColors.white;
@@ -96,22 +97,22 @@ class GroceryStores extends StatelessWidget {
                           // childAspectRatio: 1 / 1.5,
                           physics: const NeverScrollableScrollPhysics(),
                           children: [
-                            _buildGridItem(
+                            buildGridItem(
                               AppImages.alcampo,
                               "Alcampo ",
                               () {
                                 Navigator.pushNamed(
-                                    context, RoutesName.mcdonald);
+                                    context, RoutesName.alcampo);
                               },
                             ),
-                            _buildGridItem(
+                            buildGridItem(
                               AppImages.localmerchant,
                               'Local Merchants',
                               () {
                                 Navigator.pushNamed(context, RoutesName.kfc);
                               },
                             ),
-                            _buildGridItem(
+                            buildGridItem(
                               AppImages.supermart,
                               'Supermart',
                               () {
@@ -148,36 +149,8 @@ class GroceryStores extends StatelessWidget {
                 child: SvgPicture.asset(AppImages.cross),
               ),
             ),
-          )
+          ),
         ],
-      ),
-    );
-  }
-
-  Widget _buildGridItem(String image, String label, VoidCallback onTap) {
-    return InkWell(
-      onTap: onTap,
-      child: Container(
-        decoration: BoxDecoration(
-          color: secondaryColor,
-          borderRadius: BorderRadius.circular(12.r),
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SvgPicture.asset(
-              image,
-              height: 55.h,
-              width: 55.w,
-            ),
-            10.ph,
-            Text(
-              label,
-              style: textStyle,
-              textAlign: TextAlign.center,
-            ),
-          ],
-        ),
       ),
     );
   }

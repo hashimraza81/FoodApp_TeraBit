@@ -86,4 +86,31 @@ class AppImages extends AssetImage {
   static const String alcampo = '$_iconPath/alcampo.svg';
   static const String localmerchant = '$_iconPath/localmerchant.svg';
   static const String supermart = '$_iconPath/supermart.svg';
+
+  static const String alcampobg = '$_assetsPath/alcampobg.png';
+  static const String auchan = '$_assetsPath/auchan.png';
+
+  static const String thumb = '$_iconPath/thumb.svg';
+
+  static const String prime = '$_iconPath/prime.svg';
+  static const String stopwatch = '$_iconPath/stopwatch.svg';
+  static const String men = '$_iconPath/men.svg';
+
+  //Drinks Pictures
+  static const String drinks = '$_assetsPath/drinks.png';
+
+  static const String mahou = '$_assetsPath/mahou.png';
+  static const String anna = '$_assetsPath/anna.png';
+  static const String bodyrich = '$_assetsPath/bodyrich.png';
+  static const String annaglass = '$_assetsPath/annaglass.png';
+  static const String glassshop = '$_assetsPath/glassshop.png';
+  static const String shea = '$_assetsPath/shea.png';
+
+  static const String res = '$_assetsPath/Restaurants.png';
+
+  //courier
+
+  static const String cart = '$_iconPath/cart.svg';
+  static const String conv = '$_iconPath/conv.svg';
+  static const String diamond = '$_iconPath/diamond.svg';
 }

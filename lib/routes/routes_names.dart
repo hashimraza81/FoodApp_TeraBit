@@ -16,6 +16,9 @@ class RoutesName {
   static const String profile = 'profile';
 
   static const String groceryStores = 'GroceryStores';
+  static const String alcampo = 'alcampo';
 
   static const String premiumRestaurants = 'PremiumRestaurants';
+  static const String drinks = 'Drinks';
+  static const String restaurants = 'Restaurants';
 }

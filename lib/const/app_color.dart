@@ -17,7 +17,7 @@ class AppColors {
   static const Color grey1 = Color(0xFFF5F5F5);
   static const Color grey2 = Color(0xFFA0A0A0);
 
-  static const Color grey3 = Color(0xFF5A5A5A);
+  static const Color grey3 = Color(0xFF828282);
   static const Color grey4 = Color(0xFFB8B8B8);
 
   static const Color grey5 = Color(0xFF414141);

@@ -91,23 +91,43 @@ class DiscoveryPage extends StatelessWidget {
                           // childAspectRatio: 1 / 1.5,
                           physics: const NeverScrollableScrollPhysics(),
                           children: [
-                            _buildGridItem(AppImages.nimko, 'Groceries', () {
-                              Navigator.pushNamed(
-                                  context, RoutesName.groceryStores);
-                            }),
+                            _buildGridItem(
+                              AppImages.nimko,
+                              'Groceries',
+                              () {
+                                Navigator.pushNamed(
+                                    context, RoutesName.groceryStores);
+                              },
+                            ),
                             _buildGridItem(AppImages.egg, 'SuperFodvo', () {}),
                             _buildGridItem(
                                 AppImages.dairy, 'Pharmacy & Beauty', () {}),
                             _buildGridItem(
-                                AppImages.vegetable, 'Premium Restaurants', () {
-                              Navigator.pushNamed(
-                                  context, RoutesName.premiumRestaurants);
-                            }),
+                              AppImages.vegetable,
+                              'Premium Restaurants',
+                              () {
+                                Navigator.pushNamed(
+                                    context, RoutesName.premiumRestaurants);
+                              },
+                            ),
                             _buildGridItem(AppImages.cookingoil, 'Food', () {}),
                             _buildGridItem(
                                 AppImages.coke, 'Shops & Gifts', () {}),
-                            _buildGridItem(AppImages.bakery, 'Drinks', () {}),
-                            _buildGridItem(AppImages.bakery, 'Courier', () {}),
+                            _buildGridItem(
+                              AppImages.bakery,
+                              'Drinks',
+                              () {
+                                Navigator.pushNamed(context, RoutesName.drinks);
+                              },
+                            ),
+                            _buildGridItem(
+                              AppImages.bakery,
+                              'Courier',
+                              () {
+                                Navigator.pushNamed(
+                                    context, RoutesName.restaurants);
+                              },
+                            ),
                           ],
                         ),
                       ),
